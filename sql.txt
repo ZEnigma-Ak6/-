@@ -1,0 +1,25 @@
+CREATE TABLE class (
+   class_id INT PRIMARY KEY,
+   name VARCHAR(50) NOT NULL,
+   email VARCHAR(50) NOT NULL,
+   password VARCHAR(50) NOT NULL
+);
+
+
+
+INSERT INTO class (name, email, password) VALUES ('John Doe', 'johndoe@example.com', 'password123');
+
+
+INSERT INTO class (name, email, password) VALUES 
+   ('John Doe', 'johndoe@example.com', 'password123'),
+   ('Jane Smith', 'janesmith@example.com', 'letmein456'),
+   ('Bob Johnson', 'bobjohnson@example.com', 'myp@ssw0rd');
+
+
+SELECT * FROM class;
+
+
+SELECT name, email FROM class;
+
+
+SELECT * FROM class WHERE name = 'John Doe';
